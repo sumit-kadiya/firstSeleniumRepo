@@ -32,13 +32,6 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.38.0</version>
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-	<dependency>
-	    <groupId>org.testng</groupId>
-	    <artifactId>testng</artifactId>
-	    <version>7.11.0</version>
-	    <scope>test</scope>
-	</dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -50,6 +43,13 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.11.0</version>
+	    <scope>test</scope>
+	</dependency>
   </dependencies>
 
   <build>
@@ -71,7 +71,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.0.0-M5</version>
           <configuration>
                 <suiteXmlFiles>
                     <suiteXmlFile>testng.xml</suiteXmlFile>
